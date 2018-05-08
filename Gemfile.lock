@@ -1,0 +1,15 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    pp-colour (0.1.0)
+    thor (0.20.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  pp-colour (~> 0.1.0)
+  thor
+
+BUNDLED WITH
+   1.16.1
