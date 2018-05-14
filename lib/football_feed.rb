@@ -2,6 +2,7 @@ require_relative 'api_client'
 require 'json'
 
 
+
 class FootballFeed
 
   def initialize(options)
@@ -49,7 +50,7 @@ class FootballFeed
     #Uses threading to call each url generated earlier.
     urls.each do |url|
       threads << Thread.new(url,tags) do |url,tags|
-        tag = @client.send_request_threaded(url)
+        tag = @client.send_request(url)
         tags_mutex.synchronize {tags << tag}
       end
     end

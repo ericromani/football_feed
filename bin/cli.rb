@@ -1,6 +1,7 @@
 #!/usr/bin/env ruby
 require_relative '../lib/football_feed'
 require 'thor'
+require 'benchmark'
 
 @credentials = {}
 
